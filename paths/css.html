@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CSS TUTORIAL </title>
+    <link rel = "stylesheet" href = "../css/style.css">
+    <link rel="icon" type="image/x-icon" href= "../assets/pictures/CSS-Logo.png">
+  </head>
+  <body>
+    <video id="bground" muted loop autoplay poster="" >
+      <source src="../assets/pictures/Background.mp4">
+  </video>
+  <div class="header">
+    <img src="../assets/pictures/logo.png" height="100%" alt="WebSight Logo">
+    <span class="logo-text">WebSight.com</span>
+    <a href="../index.html"><button class="navigate">HOME</button></a>
+    <a href="html.html"><button class="navigate">HTML</button></a>
+    <a href="javscript.html"><button class="navigate">JS</button></a>
+</div>
+
+  <nav class="topicar">
+      <p>
+      <a href = "#Intro"><button class="areaclick">CSS INTRODUCTION</button></a><br>
+      <a href = "#synt"><button class="areaclick">CSS SYNTAX</button></a> <br>
+      <a href="#selectors"><button class="areaclick">CSS SELECTORS</button></a> <br>
+      <a href="#color"><button class="areaclick">CSS COLOR</button></a><br>
+      <a href = "#border"><button class="areaclick">CSS BORDER</button></a> <br>
+      <a href="#margin"><button class = "areaclick">CSS MARGIN</button></a> <br>
+      <a href = "#boxmodel"><button class="areaclick">CSS BOX MODEL</button></a> <br>
+      <a href = "#align"><button class="areaclick">CSS ALIGN</button></a><br>
+      <a href = "#zdex"><button class="areaclick">CSS Z-INDEX</button></a><br>
+      
+      </p>
+  </nav>
+  <div class = "lesinfo">
+
+    <section id = "Intro"><p class = "mft2">INTRODUCTION TO CSS</h1></section>
+    <p>
+      <h3>What is CSS?</h3>
+      CSS stands for Cascading Style Sheets
+      CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+      CSS saves a lot of work. It can control the layout of multiple web pages all at once
+      External stylesheets are stored in CSS files
+    </p>
+    <br>
+    <p>CSS is an acronym for  <u>"Cascading Style Sheets"</u></p>
+    <br>
+    <p>
+      <h3>Why Use CSS?</h3>
+      CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+    </p>
+    <p>
+      <br>
+      <section id = "synt"> <p class="mft2">CSS Syntax</section></p> 
+      CSS selector <br>
+
+      The selector points to the HTML element you want to style. <br>
+
+      The declaration block contains one or more declarations separated by semicolons. <br>
+
+      Each declaration includes a CSS property name and a value, separated by a colon. <br>
+
+      Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. <br>
+    </p>
+    <p>
+      <h4>Example Explained</h4> <br>
+      p is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;). <br>
+      color is a property, and red is the property value <br>
+      text-align is a property, and center is the property value. <br>
+    </p>
+    <textarea class="codearea" rows="5" cols="60">
+p {
+  color: red;
+  text-align: center;
+}
+    </textarea><br> 
+
+    <br>
+
+    <p>
+      <section id = "selectors"><p class = "mft2">CSS Selectors</section></p>
+      CSS selectors are used to "find" (or select) the HTML elements you want to style. <br>
+
+      We can divide CSS selectors into five categories:  <br>  
+    </p>            
+    <ul>
+      <li>Simple selectors (select elements based on name, id, class)</li>
+      <li><u>Combinator selectors</u> (select elements based on a specific relationship between them)</li>
+      <li><u>Pseudo-class selectors</u> (select elements based on a certain state)</li>
+      <li><u>Pseudo-elements selectors</u> (select and style a part of an element)</li>
+      <li><u>Attribute selectors</u> (select elements based on an attribute or attribute value)</li>
+    </ul>
+
+    <p>
+      <strong>The CSS id Selector</strong>
+      The id selector uses the id attribute of an HTML element to select a specific element.
+      The id of an element is unique within a page, so the id selector is used to select one unique element!
+      To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+    </p>
+
+    <textarea class="codearea" rows="20" cols="60">
+#para1 {
+  text-align: center;
+  color: red;
+}
+    </textarea><br>
+
+    <p>
+      <strong>The CSS class Selector</strong>
+      The class selector selects HTML elements with a specific class attribute.
+      To select elements with a specific class, write a period (.) character, followed by the class name.
+    </p>
+
+    <textarea class="codearea" rows="20" cols="60">
+.center {
+  text-align: center;
+  color: red;
+}
+    </textarea><br>
+
+    <p>
+      <strong>The CSS Universal Selector</strong>
+      The universal selector (*) selects all HTML elements on the page.
+    </p>
+    <p>Example: The CSS rule below will affect every HTML element on the page:</p>
+
+    <textarea class="codearea" rows="20" cols="60">
+* {
+  text-align: center;
+  color: blue;
+}
+    </textarea><br>
+
+    <p>
+      <strong>The CSS Grouping Selector</strong>
+      The grouping selector selects all the HTML elements with the same style definitions.
+      Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+    </p>
+    <p>
+      Example: In this example we have grouped the selectors from the code above:
+    </p>
+
+    <textarea class="codearea" rows="20" cols="60">
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+    </textarea><br>
+    <section id = "color"><p class = "mft2">CSS COLORS</section></p>
+    <strong>Text Color</strong> <br>
+The color property is used to set the color of the text. The color is specified by:<br>
+
+a color name - like "red"<br>
+a HEX value - like "#ff0000"<br>
+an RGB value - like "rgb(255,0,0)"<br>
+Look at CSS Color Values for a complete list of possible color values.<br>
+
+The default text color for a page is defined in the body selector.<br>
+
+Example<br>
+<textarea class="codearea" rows="20" cols="60">
+body {
+  color: blue;
+}
+
+h1 {
+  color: green;
+}
+</textarea><br>
+
+Text Color and Background Color<br>
+In this example, we define both the background-color property and the color property:<br>
+
+Example<br>
+<textarea class="codearea" rows="20" cols="60">
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+</textarea><br>
+    <p>
+    <strong>CSS Color Names</strong></p>
+    <p>
+      In CSS, a color can be specified by using a predefined color name:
+    </p>
+    <ul>
+      <li>Tomato</li>
+      <li>Orange</li>
+      <li>DodgerBlue</li>
+      <li>MediumSeaGreen</li>
+      <li>Gray</li>
+      <li>SlateBlue</li>
+      <li>Violet</li>
+      <li>LightGray</li>
+    </ul>
+    <br>
+    <p>
+      <strong>CSS Background Color</strong>
+      You can set the background color for HTML elements:
+    </p>
+    <p>Example:</p>
+
+    <textarea class="codearea" rows="20" cols="60">
+h1 {
+  background-color: DodgerBlue;
+}
+p {
+  background-color: Tomato;
+}
+    </textarea><br>
+
+    <p>
+      <strong>CSS Text Color</strong>
+      You can set the color of text:
+    </p>
+    <p>Example:</p>
+
+    <textarea class="codearea" rows="20" cols="60">
+h1 {
+  color: Tomato;
+}
+p {
+  color: DodgerBlue;
+}
+    </textarea><br>
+
+    <p>
+      <strong>CSS background-color</strong>
+      The background-color property specifies the background color of an element.
+    </p>
+
+    <p>Example: The background color of a page is set like this:</p>
+
+    <textarea class="codearea" rows="20" cols="60">
+body {
+  background-color: lightblue;
+}
+    </textarea><br>
+
+    <p>
+      <strong>Opacity / Transparency</strong>
+      The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:
+    </p>
+    <p>Example:</p>
+
+    <textarea class="codearea" rows="20" cols="60">
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+    </textarea><br>
+
+    <p>
+      <strong>CSS background-image</strong>
+      The background-image property specifies an image to use as the background of an element.
+    </p>
+
+    <p>Example: Set the background image for a page:</p>
+
+    <textarea class="codearea" rows="20" cols="60">
+body {
+  background-image: url("paper.gif");
+}
+    </textarea><br>
+
+    <p>
+      <strong>CSS background-attachment</strong>
+      The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+    </p>
+
+    <p>Example: Specify that the background image should be fixed:</p>
+
+    <textarea class="codearea" rows="20" cols="60">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+    </textarea><br>
+
+    <section id = "border"><p class = "mft2">CSS Border Style</section></p>
+    <p>The border-style property specifies what kind of border to display.</p>
+
+    <p>The following values are allowed:</p>
+
+    <ul>
+      <li>dotted - Defines a dotted border</li>
+      <li>dashed - Defines a dashed border</li>
+      <li>solid - Defines a solid border</li>
+      <li>double - Defines a double border</li>
+      <li>groove - Defines a 3D grooved border</li>
+      <li>ridge - Defines a 3D ridged border</li>
+      <li>inset - Defines a 3D inset border</li>
+      <li>outset - Defines a 3D outset border</li>
+    </ul>
+    <br>
+    <p><strong>Example:</strong></p>
+
+    <textarea class="codearea" rows="10" cols="60">
+h1 {
+  border: 5px solid black;
+}
+    </textarea><br>
+    <br>
+    <section id = "margin"><p class = "mft2">CSS Margins</section></p>
+Margins are used to create space around elements, outside of any defined borders.<br>
+
+This element has a margin of 70px.<br>
+CSS Margins<br>
+The CSS margin properties are used to create space around elements, outside of any defined borders.<br>
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).<br>
+
+Margin - Individual Sides<br>
+CSS has properties for specifying the margin for each side of an element:<br>
+<br>
+margin-top<br>
+margin-right<br>
+margin-bottom<br>
+margin-left<br>
+<br>
+All the margin properties can have the following values:<br>
+
+auto - the browser calculates the margin<br>
+length - specifies a margin in px, pt, cm, etc.<br>
+% - specifies a margin in % of the width of the containing element<br>
+inherit - specifies that the margin should be inherited from the parent element<br>
+Tip: Negative values are allowed.<br>
+<br>
+Example<br>
+Set different margins for all four sides of a &lt;p&gt; element:<br>
+
+<textarea class="codearea" rows="20" cols="60">
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+</textarea><br>
+<section id = "padding"><p class = "mft2">PADDING</p></section>
+<strong>CSS Padding</strong><br>
+Padding is used to create space around an element's content, inside of any defined borders.<br>
+
+This element has a padding of 70px.<br>
+
+CSS Padding<br>
+The CSS padding properties are used to generate space around an element's content, inside of any defined borders.<br>
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).<br>
+
+Padding - Individual Sides<br>
+CSS has properties for specifying the padding for each side of an element:<br>
+
+padding-top<br>
+padding-right<br>
+padding-bottom<br>
+padding-left<br>
+All the padding properties can have the following values:<br>
+
+length - specifies a padding in px, pt, cm, etc.<br>
+% - specifies a padding in % of the width of the containing element<br>
+inherit - specifies that the padding should be inherited from the parent element<br>
+Note: Negative values are not allowed.<br>
+
+Example<br>
+Set different padding for all four sides of a &lt;div&gt; element:<br>
+
+<textarea class="codearea" rows="20" cols="60">
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</textarea><br>
+
+<section id = "boxmodel"><p class = "mft2">CSS Box Model</p></section>
+All HTML elements can be considered as boxes.<br>
+
+The CSS Box Model<br>
+In CSS, the term "box model" is used when talking about design and layout.<br>
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.<br>
+
+(box model)<br>
+Content - The content of the box, where text and images appear<br>
+Padding - Clears an area around the content. The padding is transparent<br>
+Border - A border that goes around the padding and content<br>
+Margin - Clears an area outside the border. The margin is transparent<br>
+
+CSS TEXT<br>
+CSS Text<br>
+CSS has a lot of properties for formatting text.<br>
+<img src="../assets/pictures/boxmodel.webp" width="100%">
+
+<br>
+text formatting<br>
+This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.<br>
+
+
+<section id = "align"> <p class = "mft2">Text Alignment</section></p>
+Text Alignment and Text Direction<br>
+In this chapter you will learn about the following properties:<br>
+
+text-align<br>
+text-align-last<br>
+direction<br>
+unicode-bidi<br>
+vertical-align<br>
+
+Text Alignment<br>
+The text-align property is used to set the horizontal alignment of a text.<br>
+
+A text can be left or right aligned, centered, or justified.<br>
+
+The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):<br>
+
+Example<br>
+<textarea class="codearea" rows="20" cols="60">
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+</textarea><br>
+
+When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):<br>
+
+Example<br>
+<textarea class="codearea" rows="20" cols="60">
+div {
+  text-align: justify;
+}
+</textarea><br>
+
+Text Align Last<br>
+The text-align-last property specifies how to align the last line of a text.<br>
+
+Example<br>
+Align the last line of text in three &lt;p&gt; elements:<br>
+
+<textarea class="codearea" rows="20" cols="60">
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+</textarea><br>
+
+Text Direction<br>
+The direction and unicode-bidi properties can be used to change the text direction of an element:<br>
+
+Example<br>
+<textarea class="codearea" rows="20" cols="60">
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+</textarea><br>
+
+Vertical Alignment<br>
+The vertical-align property sets the vertical alignment of an element.<br>
+
+Example<br>
+Set the vertical alignment of an image in a text:<br>
+
+<textarea class="codearea" rows="20" cols="60">
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+</textarea><br>
+
+The CSS Text Alignment/Direction Properties<br>
+Property	Description<br>
+direction	Specifies the text direction/writing direction<br>
+text-align	Specifies the horizontal alignment of text<br>
+text-align-last	Specifies how to align the last line of a text<br>
+unicode-bidi	Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document<br>
+vertical-align	Sets the vertical alignment of an element<br>
+
+<section id = "zdex"><p class = "mFt2">CSS Z INDEX</p></section>
+SS Layout - The z-index Property<br>
+The z-index property specifies the stack order of an element.<br>
+
+The z-index Property<br>
+When elements are positioned, they can overlap other elements.<br>
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).<br>
+
+An element can have a positive or negative stack order:<br>
+
+<textarea class="codearea" rows="20" cols="60">
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+</textarea><br>
+
+    </div>
+  </body>
+</html>

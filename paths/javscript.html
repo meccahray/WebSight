@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" type="image/x-icon" href= "../assets/pictures/JavaScript-Logo.png">
+    <link rel = "stylesheet" href = "../css/style.css">
+</head>
+<body>
+
+ <video id="bground" muted loop autoplay poster="" >
+      <source src="../assets/pictures/Background.mp4">
+  </video>
+  <div class="header">
+    <img src="../assets/pictures/logo.png" height="100%" alt="WebSight Logo">
+    <span class="logo-text">WebSight.com</span>
+    <a href="../index.html"><button class="navigate">HOME</button></a>
+    <a href="css.html"><button class="navigate">CSS</button></a>
+    <a href="javscript.html"><button class="navigate">JS</button></a>
+</div>
+
+  <nav class="topicar">
+      <p>
+      <a href = "#Intro"><button class="areaclick">JavaScript INTRODUCTION</button></a><br>
+      <a href = "#whereto"><button class="areaclick">JavaScript &lt;script&gt;</button></a> <br>
+      <a href="#output"><button class="areaclick">JavaScript OUTPUT</button></a> <br>
+      <a href="#print"><button class="areaclick">JavaScript PRINT</button></a><br>
+      <a href = "#statement"><button class="areaclick">JavaScript STATEMENT</button></a> <br>
+      <a href="#program"><button class = "areaclick">JavaScript PROGRAM</button></a> <br>
+      <a href = "#blocks"><button class="areaclick">JavaScript BLOCKS</button></a> <br>
+      <a href = "#syntax"><button class="areaclick">JavaScript SYNTAX</button></a><br>
+      <a href = "#operate"><button class="areaclick">JavaScript OPERATORS</button></a><br> 
+      <a href = "#values"><button class="areaclick">JavaScript VALUES</button></a><br>
+      <a href = "#comm"><button class="areaclick">JavaScript COMMENTS</button></a><br>
+      <a href = "#Functions"><button class="areaclick">JavaScript FUNCTIONS</button></a><br>
+      <a href = "#objects"><button class="areaclick">JavaScript OBJECTS</button></a><br>
+      </p>
+  </nav>
+  <div class = "lesinfo">
+    <p>
+    <section id = "Intro"><p class="mft2"> Introduction to JavaScript</p></section><br>
+    JavaScript is the world's most popular programming language. <br>
+
+    JavaScript is the programming language of the Web. <br>
+    
+    JavaScript is easy to learn. <br>
+    
+    <br>
+        JavaScript Can Change HTML Content <br>
+        One of many JavaScript HTML methods is "getElementById()".<br>
+        The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":<br>
+        
+        In this example JavaScript changes the value of the src (source) attribute of an &lt;img&gt; tag: <br>
+        <textarea class = "codearea" rows="8" cols="60">
+document.getElementById("demo").innerHTML = "Hello JavaScript";
+document.getElementById("demo").style.fontSize = "35px";
+document.getElementById("demo").style.display = "none";
+document.getElementById("demo").style.display = "block";
+        </textarea> <br>
+        
+        <section id = "whereto"><p class = "mft2"> JavaScript &lt; script &gt;</section>
+        <strong>The &lt;script&gt; Tag </strong><br>
+        <textarea class = "codearea" rows = "20" cols = "60">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML = &quot;My First JavaScript&quot;;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</textarea> <br>
+<p> <strong>JavaScript in &lt;head&gt; or &lt;body&gt; </strong><br>
+You can place any number of scripts in an HTML document.
+Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both. <br>
+        </p>
+        <textarea class = "codearea" rows = "5" cols = "60">
+&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML = &quot;My First JavaScript&quot;;
+&lt;/script&gt;
+        </textarea> <br>
+        
+<p><strong>JavaScript in &lt;head&gt;</strong></section><br>
+        a JavaScript function is placed in the &lt;head&gt; section of an HTML page. <br>
+        The function is invoked (called) when a button is clicked: <br>
+        </p>
+        
+        &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+        
+    </textarea> <br>
+    <textarea class = "codearea" rows = "25" cols = "60">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+function myFunction() {
+    document.getElementById(&quot;demo&quot;).innerHTML = &quot;Paragraph changed.&quot;;
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Demo JavaScript in Head&lt;/h2&gt;
+
+&lt;p id=&quot;demo&quot;&gt;A Paragraph&lt;/p&gt;
+&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </textarea> <br>
+        
+        <p>JavaScript in &lt;body&gt;
+            In this example, a JavaScript function is placed in the &lt;body&gt; section of an HTML page.
+            The function is invoked (called) when a button is clicked: 
+        </p>
+        
+        <textarea class="codearea" rows="20" cols="60">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo JavaScript in Body&lt;/h2&gt;
+
+&lt;p&gt; id=&quot;demo&quot;&gt;A Paragraph&lt;/p&gt;
+
+&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+    document.getElementById(&quot;demo&quot;).innerHTML = &quot;Paragraph changed.&quot;;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
+         <br> 
+        
+        
+        <p> External JavaScript
+        Scripts can also be placed in external files: <br>
+        </p>
+        
+        <textarea class="codearea" rows="5" cols="60">
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+        </textarea> <br>
+        <br>
+
+        <section id = output><p class="mft2"> JavaScript Output</p></section> <br>
+        <p>
+        JavaScript Display Possibilities <br>
+        JavaScript can "display" data in different ways: <br>
+        
+        *Writing into an HTML element, using innerHTML. <br>
+        *Writing into the HTML output using document.write(). <br>
+        *Writing into an alert box, using window.alert(). <br>
+        *Writing into the browser console, using console.log(). <br> 
+        </p>
+        <textarea class="codearea" rows="20" cols="60">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My First Paragraph&lt;/p&gt;
+
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML = 5 + 6;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+        </textarea> </br>
+        
+        <p> Using document.write() <br>
+        For testing purposes, it is convenient to use document.write(): <br>
+        </p>
+        
+        <textarea class="codearea" rows="20" cols="60">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;body&gt;
+            
+            &lt;h1&gt;My First Web Page&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+            
+            &lt;script&gt;
+            document.write(5 + 6);
+            &lt;/script&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt;
+            
+        </textarea> <br>
+        
+        <p> You can skip the window keyword. <br>
+        In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:<br>
+        </p>
+        
+        <p>Using console.log()
+        For debugging purposes, you can call the console.log() method in the browser to display data.<br>
+        </p>
+        
+        <section id = "print"><p class="mft2"> JavaScript Print</p></section>
+        JavaScript does not have any print object or print methods. <br>
+        You cannot access output devices from JavaScript. <br>
+        The only exception is that you can call the window.print() method in the browser to print the content of the current window. <br>
+        
+        <textarea class="codearea" rows="10" cols="60">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;body&gt;
+            
+            &lt;button onclick=&quot;window.print()&quot;&gt;Print this page&lt;/button&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt;            
+        </textarea> <br>
+        <br>
+
+        <section id = "statement"><p class = "mft2"> JavaScript Statements </p></section>
+        JavaScript statements are composed of: <br>
+        Values, Operators, Expressions, Keywords, and Comments. <br>
+        This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":.<br>
+        </p>
+        
+<textarea class="codearea" rows="8" cols="60">
+let x, y, z;    // Statement 1
+x = 5;          // Statement 2
+y = 6;          // Statement 3
+z = x + y;      // Statement 4
+</textarea> <br> 
+
+<section id = "program"><p class = "mft2"> JavaScript Programs </p></section>
+A computer program is a list of "instructions" to be "executed" by a computer.  <br>
+In a programming language, these programming instructions are called statements. <br>
+A JavaScript program is a list of programming statements.<br>
+</p>
+
+<textarea class="codearea" rows="5" cols="60">
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+</textarea> <br> 
+
+<p> <strong> Semicolons</strong> ; <br>
+Semicolons separate JavaScript statements. <br>
+Add a semicolon at the end of each executable statement: <br>
+
+<p> <strong>JavaScript White Space</strong> </p>
+JavaScript ignores multiple spaces. You can add white space to your script to make it more readable. <br>
+The following lines are equivalent:<br>
+</p>
+
+<textarea class="codearea" rows="8" cols="60">
+let person = "Hege";
+let person="Hege";
+</textarea> <br>
+
+<p> <strong> JavaScript Line Length and Line Breaks</strong> <br>
+For best readability, programmers often like to avoid code lines longer than 80 characters. <br>
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator: <br>
+</p>
+
+<textarea class="codearea" rows="8" cols="60">
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
+</textarea> <br>
+        
+        <section id = "blocks"><p class = "mft2"> JavaScript Code Blocks</section> </p>
+        JavaScript statements can be grouped together in code blocks, inside curly brackets {...}. <br>
+        The purpose of code blocks is to define statements to be executed together. <br>
+        One place you will find statements grouped together in blocks, is in JavaScript functions: <br>
+        </p>
+        
+        <textarea class="codearea" rows="8" cols="60">
+        function myFunction() {
+          document.getElementById("demo1").innerHTML = "Hello Dolly!";
+          document.getElementById("demo2").innerHTML = "How are you?";
+        }
+        </textarea> <br>
+        
+        <p> <strong> JavaScript Keywords</strong>
+        JavaScript statements often start with a keyword to identify the JavaScript action to be performed. <br>
+        Our Reserved Words Reference lists all JavaScript keywords. <br>
+        Here is a list of some of the keywords you will learn about in this tutorial:<br>
+        </p>
+        
+        <p> Keyword	Description  <br>
+        Keyword	Description <br>
+        var	Declares a variable <br>
+        let	Declares a block variable <br>
+        const	Declares a block constant <br>
+        if	Marks a block of statements to be executed on a condition <br>
+        switch	Marks a block of statements to be executed in different cases <br>
+        for	Marks a block of statements to be executed in a loop <br>
+        function	Declares a function <br>
+        return	Exits a function <br>
+        try	Implements error handling to a block of statements <br>
+        </p>
+        
+        
+        <section id = "syntax" ><p class = "mft2"> JavaScript Syntax </p></section>
+        <p>
+            <textarea class="codearea" rows="15" cols="60">
+        // How to create variables:
+        var x;
+        let y;
+         <br>
+        // How to use variables:
+        x = 5;
+        y = 6;
+        let z = x + y;
+        </textarea> <br>
+        </p>
+
+        <p> <strong>JavaScript Let</strong> <br>
+          The let keyword was introduced in ES6 (2015)
+          
+          Variables declared with let have Block Scope <br>
+          
+          Variables declared with let must be Declared before use <br>
+          
+          Variables declared with let cannot be Redeclared in the same scope. <br> 
+          </p> 
+          
+          <p> <strong> Block Scope</strong> <br>
+          Before ES6 (2015), JavaScript did not have Block Scope. <br>
+          
+          JavaScript had Global Scope and Function Scope. <br>
+          
+          ES6 introduced the two new JavaScript keywords: let and const. <br>
+          
+          These two keywords provided Block Scope in JavaScript: <br> 
+          </p> 
+          
+          <textarea class="codearea" rows="15" cols="60">
+          {
+            let x = 2;
+          }
+          // x can NOT be used here
+          </textarea> <br>
+          
+          <p> Global Scope
+          Variables declared with the var always have Global Scope. <br>
+          
+          Variables declared with the var keyword can NOT have block scope:<br>
+          </p> 
+          
+          <p> Variables declared with varinside a { } block can be accessed from outside the block: <br>
+          </p>
+          
+          <textarea class="codearea" rows="5" cols="60">
+          {
+            var x = 2;
+          }
+          </textarea> <br>
+          <p> Redeclaring Variables  <br>
+          Redeclaring a variable using the var keyword can impose problems. <br>
+          
+          Redeclaring a variable inside a block will also redeclare the variable outside the block: <br>
+          </p>
+          
+          <textarea class="codearea" rows="15" cols="60">
+          var x = 10;
+          // Here x is 10
+          
+          {
+          var x = 2;
+          // Here x is 2
+          }
+          
+          // Here x is 2
+          </textarea> <br>
+          
+        <p> <strong>Let Hoisting</strong> <br>
+          Variables defined with var are hoisted to the top and can be initialized at any time. <br>
+          
+          You can use the variable before it is declared:<br>
+          </p>
+          
+          <textarea class="codearea" rows="8" cols="60">
+          carName = "Volvo";
+          var carName;
+          </textarea> <br> 
+          
+          <p><strong>JavaScript Const</strong> <br>
+          The const keyword was introduced in ES6 (2015) <br>
+          
+          Variables defined with const cannot be Redeclared <br>
+          
+          Variables defined with const cannot be Reassigned <br>
+          
+          Variables defined with const have Block Scope <br>
+          </p> 
+          
+          <p> <strong>Cannot be Reassigned</strong> <br>
+          A variable defined with the const keyword cannot be reassigned:<br>
+          </p>
+          
+          <textarea class="codearea" rows="8" cols="60">
+          const PI = 3.141592653589793;
+          PI = 3.14;      // This will give an error
+          PI = PI + 10;   // This will also give an error
+          <textarea> <br>
+          
+          JavaScript const variables must be assigned a value when they are declared:<br> 
+          </p>
+          
+          <p> <strong>Constant Objects and Arrays</strong> <br>
+          The keyword const is a little misleading. <br>
+          
+          It does not define a constant value. It defines a constant reference to a value. <br>
+          
+          Because of this you can NOT: <br>
+          
+          Reassign a constant value <br>
+          Reassign a constant array <br>
+          Reassign a constant object <br>
+          But you CAN: <br>
+          
+          Change the elements of constant array <br>
+          Change the properties of constant object <br>
+          </p>
+          
+          <p> <strong>Constant Arrays</strong> <br>
+          You can change the elements of a constant array:<br> 
+          </p>
+          
+          <textarea class="codearea" rows="8" cols="60">
+          // You can create a constant array:
+          const cars = ["Saab", "Volvo", "BMW"];
+          
+          // You can change an element:
+          cars[0] = "Toyota";
+          
+          // You can add an element:
+          cars.push("Audi");
+          </textarea> <br>
+          
+          <p> <strong> Constant Objects</strong> <br>
+          You can change the properties of a constant object:<br>
+          </p>
+          
+          <textarea class="codearea" rows="20" cols="60">
+          // You can create a const object:
+          const car = {type:"Fiat", model:"500", color:"white"};
+          
+          // You can change a property:
+          car.color = "red";
+          
+          // You can add a property:
+          car.owner = "Johnson";
+          </textarea> <br> 
+          <br>
+          <section id = "operate"><p class="mft2">JavaScript Operators</p></section>
+          
+          Javascript operators are used to perform different types of mathematical and logical computations. <br>
+          
+          Examples: <br>
+          The Assignment Operator <strong>=</strong> assigns values <br>
+          
+          The Addition Operator <strong>+</strong> adds values <br>
+          
+          The Multiplication Operator <strong>*</strong> multiplies values <br>
+          
+          The Comparison Operator <strong>></strong> compares values <br>
+          </p>
+          
+          <p><strong>JavaScript Assignment</strong> <br>
+          The Assignment Operator (=) assigns a value to a variable: <br>
+           
+          Examples: <br>
+              
+              let x = 10; <br>
+              // Assign the value 5 to x <br>
+              let x = 5; <br>
+              // Assign the value 2 to y <br>
+              let y = 2; <br>
+              // Assign the value x + y to z: <br>
+              let z = x + y; <br> 
+          </p>
+          
+
+          <p> <strong> Types of JavaScript Operators </strong><br>
+            There are different types of JavaScript operators:<br>
+            
+            Arithmetic Operators <br>
+            Assignment Operators <br>
+            Comparison Operators <br>
+            String Operators <br>
+            Logical Operators <br>
+            Bitwise Operators <br>
+            Ternary Operators <br>
+            Type Operators <br>
+            </p>
+            
+            <strong>Operator	Description</strong> <br>
+            
+            +	Addition <br>
+            -	Subtraction <br>
+            *	Multiplication <br>
+            **	Exponentiation (ES2016) <br>
+            /	Division <br>
+            %	Modulus (Remainder) <br>
+            ++	Increment <br>
+            --	Decrement <br>
+            </p>
+        
+        </p>
+        <br>
+        <section id = "values"><p class="mft2"> JavaScript Variables </p></section> <br>
+        In a programming language, variables are used to store dataJavaScript Operators values. <br>
+        
+        JavaScript uses the keywords var, let and const to declare variables. <br>
+        
+        An equal sign is used to assign values to variables. <br>
+        
+        Example, x is defined as a variable. Then, x is assigned (given) the value 6: <br>
+        </p>
+        Variables are Containers for Storing Data <br>
+        JavaScript Variables can be declared in 4 ways: <br>
+        Using <strong>var</strong> <br>
+        Using <strong>let</strong> <br>
+        Using <strong>const</strong> <br>
+
+        <strong><p> JavaScript Operators </strong></p>
+        JavaScript uses arithmetic operators ( + - * / ) to compute values:<br>
+        </p>
+        
+        
+        <section id = "comm"><p class = "mft2">JavaScript Comments</section> </p>
+        <p>
+        Not all JavaScript statements are "executed". <br>
+        
+        Code after double slashes // or between /* and */ is treated as a comment. <br>
+        
+        Comments are ignored, and will not be executed:<br>
+        JavaScript comments can be used to explain JavaScript code, and to make it more readable. <br>
+        
+        JavaScript comments can also be used to prevent execution, when testing alternative code. <br>
+        </p>
+        
+        <p><strong>Single Line Comments</strong> <br>
+        Single line comments start with //. <br>
+        
+        Any text between // and the end of the line will be ignored by JavaScript (will not be executed). <br>
+        
+        </p>
+        
+        <p> <strong>Multi-line Comments</strong> <br>
+        Multi-line comments start with /* and end with */. <br>
+        
+        Any text between /* and */ will be ignored by JavaScript. <br>
+        
+        This example uses a multi-line comment (a comment block) to explain the code: <br>
+        </p>
+        </p>
+        
+        
+        <p> JavaScript Data Types <br>
+        
+        Examples: <br>
+        // Numbers:<br>
+        let weight = 7.5; <br>
+        // Strings:<br>
+        let color = "Yellow"; <br>
+        let lastName = "Johnson"; <br>
+        // Booleans <br>
+        let x = true; <br>
+        let y = false; <br>
+        // Object: <br>
+        const person = {firstName:"John", lastName:"Doe"}; <br>
+        // Array object: <br>
+        const cars = ["Saab", "Volvo", "BMW"]; <br>
+        // Date object: <br>
+        const date = new Date("2022-03-25"); <br>
+        <br>
+        </p>
+        A JavaScript variable can hold any type of data.<br>
+        The Concept of Data Types<br>
+        In programming, data types is an important concept.<br>
+        To be able to operate on variables, it is important to know something about the type.<br>
+        <br>
+        
+        <section id = "Functions"><p class = "mft2"> JavaScript Functions </p></section><br>
+        A JavaScript function is a block of code designed to perform a particular task. <br>
+        A JavaScript function is executed when "something" invokes it (calls it). <br>
+        Example:<br>
+<textarea class = "codearea" rows="7" cols="60">
+// Function to compute the product of p1 and p2<br>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}</textarea><br>
+<br>
+         <strong>JavaScript Function Syntax</strong> <br>
+        A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().<br>
+        Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).<br>
+        The parentheses may include parameter names separated by commas:<br>
+        (parameter1, parameter2, ...)<br>
+        The code to be executed, by the function, is placed inside curly brackets: {}<br>
+        function name(parameter1, parameter2, parameter3) {
+          // code to be executed
+        }<br>
+        Function parameters are listed inside the parentheses () in the function definition.<br>
+        Function arguments are the values received by the function when it is invoked.<br>
+        Inside the function, the arguments (the parameters) behave as local variables.<br>
+        Function Invocation<br>
+        The code inside the function will execute when "something" invokes (calls) the function:<br>
+        When an event occurs (when a user clicks a button)<br>
+        When it is invoked (called) from JavaScript code<br>
+        Automatically (self invoked)<br>
+        <br>
+        <strong>Function Return</strong><br>
+        When JavaScript reaches a return statement, the function will stop executing.<br>
+        If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.<br>
+        Functions often compute a return value. The return value is "returned" back to the "caller":<br>
+        Example:<br>
+        <textarea class="codearea" rows="8" cols="60">
+Calculate the product of two numbers, and return the result:
+// Function is called, the return value will end up in x
+let x = myFunction(4, 3);
+function myFunction(a, b) {
+// Function returns the product of a and b
+  return a * b;
+}</textarea><br>
+        Why Functions?<br>
+        With functions you can reuse code<br>
+        You can write code that can be used many times.<br>
+        You can use the same code with different arguments, to produce different results.<br>
+        The () Operator<br>
+        The () operator invokes (calls) the function:<br>
+        Example:<br>
+<textarea class="codearea" rows="8" cols="60">
+Convert Fahrenheit to Celsius:
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}</textarea><br>
+        let value = toCelsius(77);<br>
+        Accessing a function with incorrect parameters can return an incorrect answer:<br>
+        Example:<br>
+<textarea class="codearea" rows="8" cols="60">
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}</textarea><br>
+let value = toCelsius();<br>
+Accessing a function without () returns the function and not the function result:<br>
+Example:<br>
+<textarea class="codearea" rows="8" cols="60">
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+let value = toCelsius;</textarea><br>
+</p>
+        
+        <section id = "objects"> <p class = "mft2">JavaScript Objects</section></p>
+        
+        <strong>Object Properties</strong><br>
+        A real life car has properties like weight and color:<br>
+        car.name = Fiat, car.model = 500, car.weight = 850kg, car.color = white.<br>
+        Car objects have the same properties, but the values differ from car to car.<br>
+        Object Methods<br>
+        A real life car has methods like start and stop:<br>
+        car.start(), car.drive(), car.brake(), car.stop().<br>
+        Car objects have the same methods, but the methods are performed at different times.<br>
+        JavaScript Variables<br>
+        JavaScript variables are containers for data values.<br>
+        This code assigns a simple value (Fiat) to a variable named car:<br>
+        Example<br>
+<textarea class="codearea" rows="8" cols="60">
+let car = "Fiat";<br>
+</textarea> <br>
+<br>
+Objects are variables too. But objects can contain many values.<br>
+This code assigns many values (Fiat, 500, white) to an object named car:<br>
+Example<br>
+<textarea class="codearea" rows="8" cols="60">
+const car = {type:"Fiat", model:"500", color:"white"};</textarea> <br>
+<br>
+        It is a common practice to declare objects with the const keyword.<br>
+        Learn more about using const with objects in the chapter: JS Const.<br>
+        JavaScript Object Definition<br>
+        <br>
+        <strong>How to Define a JavaScript Object</strong><br>
+        Using an Object Literal<br>
+        Using the new Keyword<br>
+        Using an Object Constructor<br>
+        JavaScript Object Literal<br>
+        An object literal is a list of name:value pairs inside curly braces {}.<br>
+        {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}<br>
+        name:value pairs are also called key:value pairs.<br>
+        object literals are also called object initializers.<br>
+        Creating a JavaScript Object<br>
+        These examples create a JavaScript object with 4 properties:<br>
+        Examples:<br>
+        <textarea class="codearea" rows="20" cols="60">
+        // Create an Object<br>
+        const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        Spaces and line breaks are not important. An object initializer can span multiple lines:
+        // Create an Object
+        const person = {
+          firstName: "John",
+          lastName: "Doe",
+          age: 50,
+          eyeColor: "blue"
+        };</textarea> <br>
+        <br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+# Query: <textarea>
+# Flags: RegExp OpenEditors IgnoreExcludeSettings
+# ContextLines: 1
+
+20 results - 1 file
+
+paths\css.html:
+   39              </p>
+   40:             <textarea class = "codearea" rows = "20" cols = "60">
+   41                  p {
+
+   79  The CSS rule below will be applied to the HTML element with id="para1": </p>
+   80:    <textarea class = "codearea" rows = "20" cols = "60"> 
+   81      #para1 {
+
+   96              </p>
+   97:             <textarea class = "codearea" rows = "20" cols = "60">
+   98                  .center {
+
+  110              </p>
+  111:             <textarea class = "codearea" rows = "20" cols = "60">
+  112                  * {
+
+  127              </p>
+  128:             <textarea class = "codearea" rows = "20" cols = "60">
+  129                  h1, h2, p {
+
+  152  <p>Example:</p>
+  153: <textarea class = "codearea" rows = "20" cols = "60">
+  154      <h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+  162  <p>Example:</p>
+  163: <textarea class = "codearea" rows = "20" cols = "60">
+  164      <h1 style="color:Tomato;">Hello World</h1>
+
+  175  </p>
+  176: <textarea class = "codearea" rows = "20" cols = "60">
+  177  body {
+
+  186              <p>Example:</p>
+  187:             <textarea class = "codearea" rows = "20" cols = "60">
+  188                  div {
+
+  201  Set the background image for a page:</p>
+  202: <textarea class = "codearea" rows = "20" cols = "60">
+  203  body {
+
+  213  Specify that the background image should be fixed:</p>
+  214: <textarea class = "codearea" rows = "20" cols = "60">
+  215  body {
+
+  241  Demonstration of the different border styles:</p>
+  242: <textarea class = "codearea" rows = "20" cols = "60">
+  243  p.dotted {border-style: dotted;}
+
+  263  Demonstration of the different border widths:</p>
+  264: <textarea class = "codearea" rows = "20" cols = "60">
+  265  p.one {
+
+  292  Demonstration of the different border colors:</p>
+  293: <textarea class = "codearea" rows = "20" cols = "60">
+  294  p.one {
+
+  316  <p>Example</p>
+  317: <textarea class = "codearea" rows = "20" cols = "60">
+  318  p {
+
+  346  Set different margins for all four sides of a element:</p>
+  347: <textarea class = "codearea" rows = "20" cols = "60">
+  348  p {
+
+  372  Set different padding for all four sides of a "div" element:</p>
+  373: <textarea class = "codearea" rows = "20" cols = "60">
+  374  div {
+
+  398  Set the height and width of a "div" element:</p>
+  399: <textarea class = "codearea" rows = "20" cols = "60">
+  400  div {
+
+  417  <p>Example:</p>
+  418: <textarea class = "codearea" rows = "20" cols = "60">
+  419  body {
+
+  437  Specify some different fonts for three paragraphs:</p>
+  438: <textarea class = "codearea" rows = "20" cols = "60">
+  439  .p1 {

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> HTML</title>
+    <link rel="icon" type="image/x-icon" href= "../assets/pictures/HTML5-Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel = "stylesheet" href = "../css/style.css">
+</head>
+<body>
+  <video id="bground" muted loop autoplay poster="" >
+    <source src="assets/pictures/Background.mp4">
+</video>
+<div class="header">
+    <img src="../assets/pictures/logo.png" height="100%" alt="WebSight Logo">
+    <span class="logo-text">WebSight.com</span>
+    <a href="../index.html"><button class="navigate">HOME</button></a>
+    <a href="css.html"><button class="navigate">CSS</button></a>
+    <a href="javscript.html"><button class="navigate">JS</button></a>
+</div>
+
+    <nav class="topicar">
+        <p>
+        <a href = "#Intro"><button class="areaclick">INTRODUCTION</button></a><br>
+        <a href = "#basics"><button class="areaclick">HTML BASICS</button></a> <br>
+        <a href="#elements"><button class="areaclick">HTML ELEMENTS</button></a> <br>
+        <a href="#attributes"><button class="areaclick">HTML ATTRIBUTES</button></a><br>
+        <a href = "#format"><button class="areaclick">HTML FORMATTING</button></a> <br>
+        <a href="#comm"><button class = "areaclick">HTML COMMENTS</button></a> <br>
+        <a href = "#divs"><button class="areaclick">HTML DIV ELEMENT</button></a> <br>
+        <a href = "#tables"><button class="areaclick">HTML TABLES</button></a><br>
+        <a href = "#lists"><button class="areaclick">HTML LISTS</button></a><br>
+        <a href = "#imgstx"><button class="areaclick">HTML IMAGE SYNTAX</button></a><br>
+        <a href = "#inputs"><button class="areaclick">HTML INPUTS</button></a><br>
+        </p>
+    </nav>
+    <div class = "lesinfo">
+    <section id = "Intro"> <p class = "mft2">INTRODUCTION TO HTML </section></p>
+        <p>
+            <strong>What is HTML?</strong><br>
+            HTML, which stands for HyperText Markup Language, is the primary coding language of the World Wide Web. It defines the content and structure of web pages.<br>
+            HTML is used by most websites and probably all of the ones you use on a regular basis.&lt;br&gt;<br>
+            <br>
+            HTML is an acronym for "<u>HyperText Markup Language.</u>"<br>
+            <br>
+            </p>
+            <p>
+                <br>
+                Example Explained<br>
+                The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document <br>
+                The &lt;html &gt; element is the root element of an HTML page <br>
+                The &lt;head&gt; element contains meta information about the HTML page <br>
+                The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab) <br>
+                The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <br>
+                The &lt;h1&gt; element defines a large heading <br>
+                The &lt;p&gt; element defines a paragraph <br>
+            </p>
+    <hr>
+
+    <section id="basics"> <p class = "mft2">HTML BASICS</section></p>
+            <p>
+                <br>
+                HTML Documents<br>
+                All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.<br>
+                The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.<br>
+                The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.<br>
+                The &lt;!DOCTYPE&gt; Declaration<br>
+                The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly.<br>
+                It must only appear once, at the top of the page (before any HTML tags).<br>
+                The &lt;!DOCTYPE&gt; declaration is not case sensitive.<br>
+                The &lt;!DOCTYPE&gt; declaration for HTML5 is:<br>
+
+                <textarea class = "codearea" readonly rows='autoplay' cols="50">
+&lt;!DOCTYPE html&gt;
+                    </textarea>
+            </p>
+            <br>
+            <p>
+<strong>HTML Headings</strong><br>
+HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.<br>
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading: 
+            </p>
+            <textarea class = "codearea" readonly rows = "3" cols = "50">
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;              
+                </textarea>
+            <p>
+<strong>HTML Paragraphs</strong><br>
+HTML paragraphs are defined with the &lt;p&gt; tag:&lt;br&gt;
+<br>
+Example:<br>
+<textarea class = "codearea" readonly rows = "3" cols = "50">
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</textarea><br>
+
+<strong>HTML Links</strong><br>
+HTML links are defined with the &lt;a&gt; tag:&lt;br&gt;
+
+&lt;h2&gt;Example&lt;/h2&gt;<br>
+<textarea class = "codearea" readonly rows = "3" cols = "50">
+&lt;a href="https://www.Websight.com"&gt;This is a link&lt;/a&gt;<br>
+The link's destination is specified in the href attribute. &lt;br&gt;
+</textarea><br>
+Attributes are used to provide additional information about HTML elements.<br>>
+
+You will learn more about attributes in a later chapter. <br>
+
+&lt;h1&gt;HTML Images&lt;/h1&gt;<br>
+HTML images are defined with the &lt;img&gt; tag.<br>
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:<br>
+
+&lt;h2&gt;Example&lt;/h2&gt;<br>
+&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;<br>
+            </p>    
+<section id = elements><p class="mft2">ELEMENTS</p></section>
+<br>
+
+<p>
+<strong>HTML Elements</strong><br>
+An HTML element is defined by a start tag, some content, and an end tag.<br>
+
+&lt;h1&gt;HTML Elements&lt;/h1&gt;<br>
+The HTML element is everything from the start tag to the end tag: <br>
+
+&lt;tagname&gt;Content goes here...&lt;/tagname&gt;<br>
+Examples of some HTML elements: <br>
+<textarea class = "codearea" readonly rows = "7" cols = "50">
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+Start tag	Element content	End tag
+&lt;h1&gt;	My First Heading	&lt;/h1&gt;
+&lt;p&gt;	My first paragraph.	&lt;/p&gt;
+</textarea>
+<br>
+
+
+<strong>HTML Page Title</strong><br>
+Every web page should have a page title to describe the meaning of the page.<br>
+The &lt;title&gt; element adds a title to your page:<br>
+Example<br>
+<textarea class = "codearea" readonly rows = "7" cols = "50">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</textarea><br>
+
+<strong>Nested HTML Elements</strong><br>
+HTML elements can be nested (this means that elements can contain other elements).<br>
+
+All HTML documents consist of nested HTML elements.<br>
+
+The following example contains four HTML elements (&lt;html&gt;, &lt;body&gt;, &lt;h1&gt; and &lt;p&gt;):<br>
+<textarea class = "codearea" readonly rows = "7" cols = "50">
+&lt;h1&gt;Example&lt;/h1&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea><br>
+
+<strong>Example Explained</strong><br>
+The &lt;html&gt; element is the root element and it defines the whole HTML document.<br>
+
+It has a start tag &lt;html&gt; and an end tag &lt;/html&gt;.<br>
+
+Then, inside the &lt;html&gt; element there is a &lt;body&gt; element:<br>
+
+<textarea class = "codearea" readonly rows = "7" cols = "50">
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+</textarea><br>
+The &lt;body&gt; element defines the document's body.<br>
+
+It has a start tag &lt;body&gt; and an end tag &lt;/body&gt;.<br>
+
+Then, inside the &lt;body&gt; element there are two other elements: &lt;h1&gt; and &lt;p&gt;:<br>
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+The &lt;h1&gt; element defines a heading.<br>
+
+It has a start tag &lt;h1&gt; and an end tag &lt;/h1&gt;: <br>
+<textarea class = "codearea" readonly rows = "7" cols = "50">
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+The &lt;p&gt; element defines a paragraph.
+
+It has a start tag &lt;p&gt; and an end tag &lt;/p&gt;:
+
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+</textarea>
+</p>
+<br>
+<section id = "attributes"><p class="mft2">HTML ATRRIBUTES</p></section>
+<p>
+    <br>
+
+<strong>HTML Attributes</strong><br>
+HTML attributes provide additional information about HTML elements. <br>
+
+All HTML elements can have attributes<br>
+Attributes provide additional information about elements<br>
+Attributes are always specified in the start tag<br>
+Attributes usually come in name/value pairs like: name="value"<br>
+
+&lt;h1&gt;The href Attribute&lt;/h1&gt;<br>
+The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to: <br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "50">
+&lt;a href="https://www.Websight.com"&gt;Visit Websight&lt;/a&gt
+You will learn more about links in our HTML Links chapter.
+</textarea><br>
+<strong>The src Attribute</strong><br>
+The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed: <br>
+Example:<br>
+<textarea class = "codearea" readonly rows = "3" cols = "50">
+&lt;img src="img_girl.jpg"&gt;
+</textarea> <br>
+
+<strong>Width and height Attributes</strong><br>
+The &lt;img&gt; tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "50">
+&lt;img src="img_picture.jpg" width="500" height="600"&gt;
+</textarea> <br>
+
+<strong>The alt Attribute</strong><br>
+The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.<br>
+
+Example:<br>
+<textarea class = "codearea" readonly rows = "3" cols = "50">
+&lt;img src="img_picture.jpg" alt="Picture lng To"&gt;
+</textarea> <br>
+
+<strong>The style Attribute</strong><br>
+The style attribute is used to add styles to an element, such as color, font, size, and more.<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "5" cols = "60">
+&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
+You will learn more about styles in our HTML Styles chapter.
+</textarea> <br>
+The lang Attribute<br>
+You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the Web page. This is meant to assist search engines and browsers.<br>
+
+The following example specifies English as the language:<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+...<br>
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea> <br>
+Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.<br>
+
+The following example specifies English as the language and United States as the country:<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+You can see all the language codes in our HTML Language Code Reference.<br>
+
+The title Attribute<br>
+The title attribute defines some extra information about an element.<br>
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</textarea> <br>
+<br>
+<section id = "format"> <p class="mft2">HTML FORMATTING</p></section>
+<p>
+    HTML Formatting Elements<br>
+Formatting elements were designed to display special types of text:<br>
+<br>
+<ul>
+<li>&lt;b&gt; - Bold text</li>
+<li>&lt;strong&gt; - Important text</li>
+<li>&lt;i&gt; - Italic text</li>
+<li>&lt;em&gt; - Emphasized text</li>
+<li>&lt;mark&gt; - Marked text</li>
+<li>&lt;small&gt; - Smaller text</li>
+<li>&lt;del&gt; - Deleted text</li>
+<li>&lt;ins&gt; - Inserted text</li>
+<li>&lt;sub&gt; - Subscript text</li>
+<li>&lt;sup&gt; - Superscript text</li>
+</ul>
+<br>
+HTML &lt;b&gt; and &lt;strong&gt; Elements<br>
+The HTML &lt;b&gt; element defines bold text, without any extra importance.<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;b&gt;This text is bold&lt;/b&gt;
+</textarea> <br>
+The HTML &lt;strong&gt; element defines text with strong importance. The content inside is typically displayed in bold.
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;strong&gt;This text is important!&lt;/strong&gt;<br>
+</textarea> <br>
+
+<strong>HTML &lt;i&gt; and &lt;em&gt; Elements</strong><br>
+The HTML &lt;i&gt; element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;i&gt;This text is italic&lt;/i&gt;
+</textarea><br>
+The HTML &lt;em&gt; element defines emphasized text. The content inside is typically displayed in italic.<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;em&gt;This text is emphasized&lt;/em&gt;
+</textarea><br>
+<strong>HTML &lt;small&gt; Element<br></strong>
+The HTML &lt;small&gt; element defines smaller text:<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;small&gt;This is some smaller text.&lt;/small&gt</textarea>;<br>
+
+<strong>HTML &lt;mark&gt; Element</strong><br>
+The HTML &lt;mark&gt; element defines text that should be marked or highlighted:<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;</textarea><br>
+
+<strong>HTML &lt;del&gt; Element</strong><br>
+The HTML &lt;del&gt; element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:<br>
+
+Example:<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;</textarea><br>
+
+<strong>HTML &lt;ins&gt; Element</strong><br>
+The HTML &lt;ins&gt; element defines a text that has been inserted into a document. Browsers will usually underline inserted text:<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;</textarea><br>
+
+<strong>&lt;sub&gt; Element</strong> <br>
+The HTML &lt;sub&gt; element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;</textarea><br>
+
+<strong>HTML &lt;sup&gt; Element</strong><br>
+The HTML &lt;sup&gt; element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.:<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+&lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;
+</textarea><br>
+</p>
+</p>
+<section id = "comm"><p class="mft2">HTML COMMENTS</p></section>
+<p>
+    <strong>HTML Comments</strong><br>
+HTML comments are not displayed in the browser, but they can help document your HTML source code.<br>
+
+HTML Comment Tag<br>
+You can add comments to your HTML source by using the following syntax:<br>
+
+&lt;!-- Write your comments here --&gt;<br>
+Notice that there is an exclamation point (!) in the start tag, but not in the end tag.<br>
+
+Comments are not displayed by the browser, but they can help document your HTML source code.<br>
+
+Add Comments<br>
+With comments you can place notifications and reminders in your HTML code:<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60">
+Example<br>
+&lt;!-- This is a comment --&gt;
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;!-- Remember to add more information here --&gt;
+</textarea><br>
+<strong>
+Hide Content</strong><br>
+Comments can be used to hide content.<br>
+
+This can be helpful if you hide content temporarily:<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60">
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+
+&lt;!-- &lt;p&gt;This is another paragraph &lt;/p&gt; --&gt;
+
+&lt;p&gt;This is a paragraph too.&lt;/p&gt;</textarea><br>
+You can also hide more than one line. Everything between the &lt;!-- and the --&gt; will be hidden from the display.<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60">
+Hide a section of HTML code:<br>
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!--
+&lt;p&gt;Look at this cool image:&lt;/p&gt;
+&lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;
+--&gt;
+&lt;p&gt;This is a paragraph too.&lt;/p&gt;</textarea><br>
+Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.<br>
+
+
+<strong>Hide Inline Content</strong><br>
+Comments can be used to hide parts in the middle of the HTML code.<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+Hide a part of a paragraph:
+&lt;p&gt;This &lt;!-- great text --&gt; is a paragraph.&lt;/p&gt;</textarea><br>
+
+</p>
+<section id = "divs"><p class = "mft2">HTML DIV ELEMENT</p></section>
+<p>
+    <strong>The &lt;div&gt; Element</strong><br>
+    The &lt;div&gt; element is used as a container for other HTML elements.<br>
+The &lt;div&gt; element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "3" cols = "60">
+A &lt;div&gt; element takes up all available width:
+
+Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt; dolor sit amet.</textarea><br>
+
+The &lt;div&gt; element has no required attributes, but style, class and id are common.<br>
+
+&lt;div&gt; as a container<br>
+The &lt;div&gt; element is often used to group sections of a web page together.<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "8" cols = "60">
+A &lt;div&gt; element with HTML elements:
+
+&lt;div&gt;
+  &lt;h2&gt;London&lt;/h2&gt;
+  &lt;p&gt;London is the capital city of England.&lt;/p&gt;
+  &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;
+&lt;/div&gt;</textarea><br>
+</p>
+
+<section id = "tables"><p class = "mft2">HTML TABLES</p></section>
+<p>
+    <strong>HTML Tables</strong><br>
+HTML tables allows to arrange data into rows and columns.<br>
+
+Example<br>
+A simple HTML table:<br>
+<textarea class = "codearea" readonly rows = "15" cols = "60">
+&lt;table&gt;<br>
+  &lt;tr&gt;<br>
+    &lt;th&gt;Workplace&lt;/th&gt;<br>
+    &lt;th&gt;CEO&lt;/th&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+    &lt;td&gt;Arvee's Catering Service&lt;/td&gt;<br>
+    &lt;td&gt;Arvee Katigbak&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+&lt;/table&gt;</textarea><br>
+<strong>Table Rows</strong><br>
+Each table row starts with a &lt;tr&gt; and ends with a &lt;/tr&gt; tag.<br>
+tr stands for table row.<br>
+<strong>Table Cells</strong><br>
+Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag.<br>
+td stands for table data.<br>
+Everything between &lt;td&gt; and &lt;/td&gt; are the content of the table cell.<br>
+Example<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60">
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Kanor&lt;/td&gt;
+    &lt;td&gt;Jamal&lt;/td&gt;
+    &lt;td&gt;Berto&lt;/td&gt;
+    &lt;td&gt;Domeng&lt;/td&gt;
+    &lt;td&gt;Noel&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</textarea><br>
+
+<strong>Table Headers</strong><br>
+Sometimes you want your cells to be table header cells. In those cases use the &lt;th&gt; tag instead of the &lt;td&gt; tag:<br>
+th stands for table header.<br>
+
+Example<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60">
+&lt;table&gt;<br>
+  &lt;tr&gt;<br>
+    &lt;th&gt;Group 1&lt;/th&gt;<br>
+    &lt;th&gt;Group 2&lt;/th&gt;<br>
+    &lt;th&gt;Group 3&lt;/th&gt;<br>
+  &lt;/tr&gt;<br>
+&lt;/table&gt;</textarea><br>
+</p>
+
+<!--Palatandaan-->
+<p>
+
+  <section id = "lists"><p class = "mft2">HTML LISTS</p></section>
+  <strong>HTML Lists</strong><br>
+  HTML lists allow web developers to group a set of related items in lists.<br>
+  
+  <strong>Unordered HTML List</strong><br>
+  An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.<br>
+  
+  The list items will be marked with bullets (small black circles) by default:<br>
+  <textarea class = "codearea" readonly rows = "10" cols = "60">
+  &lt;ul&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+  &lt;/ul&gt;</textarea><br>
+  
+  <strong>Ordered HTML List</strong><br>
+  An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.<br>
+  
+  The list items will be marked with numbers by default:<br>
+  
+  Example<br>
+  <textarea class = "codearea" readonly rows = "10" cols = "60">
+  &lt;ol&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+  &lt;/ol&gt;</textarea><br>
+  
+  <strong>HTML Description List</strong><br>
+  A description list is a list of terms, with a description of each term.<br>
+  
+  The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:<br>
+  <textarea class = "codearea" readonly rows = "10" cols = "60">
+  Example<br>
+  &lt;dl&gt;
+    &lt;dt&gt;Coffee&lt;/dt&gt;
+    &lt;dd&gt;- black hot drink&lt;/dd&gt;
+    &lt;dt&gt;Milk&lt;/dt&gt;
+    &lt;dd&gt;- white cold drink&lt;/dd&gt;
+  &lt;/dl&gt;</textarea><br>
+</p>
+<section id="imgstx"><p class = "mft2">Image Syntax</p></section>
+<p>
+  <strong> Images Syntax</strong><br>
+  The HTML &lt;img&gt; tag is used to embed an image in a web page.<br>
+  
+  Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.<br>
+  
+  The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.<br>
+  
+  The &lt;img&gt; tag has two required attributes:<br>
+  
+  src - Specifies the path to the image<br>
+  alt - Specifies an alternate text for the image<br>
+  
+  Syntax<br>
+  &lt;img src="url" alt="alternatetext"&gt;<br>
+  
+  The src Attribute<br>
+  The required src attribute specifies the path (URL) to the image.<br>
+  
+
+  Example<br>
+  <textarea class = "codearea" readonly rows = "7" cols = "60"><br>
+  &lt;img src="img_picture.jpg" alt="pcis"&gt;
+  </textarea><br>
+  
+  <strong>The alt Attribute</strong><br>
+  The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).<br>
+<textarea class = "codearea" readonly rows = "10" cols = "60"> <br>
+&lt;img src="china.jpg" alt="china"&gt;
+</textarea><br>
+  
+  </p>
+  <br>
+  <section id = "inputs"><p class = "mft2">HTML INPUTS</p></section>
+  <p>
+  <strong>HTML Input Types</strong><br>
+  <textarea class = "codearea" readonly rows = "20" cols = "60">
+  &lt;input type="button"&gt;
+  &lt;input type="checkbox"&gt;
+  &lt;input type="color"&gt;
+  &lt;input type="date"&gt;
+  &lt;input type="datetime-local"&gt;
+  &lt;input type="email"&gt;
+  &lt;input type="file"&gt;
+  &lt;input type="hidden"&gt;
+  &lt;input type="image"&gt;
+  &lt;input type="month"&gt;
+  &lt;input type="number"&gt;
+  &lt;input type="password"&gt;
+  &lt;input type="radio"&gt;
+  &lt;input type="range"&gt;
+  &lt;input type="reset"&gt;
+  &lt;input type="search"&gt;
+  &lt;input type="submit"&gt;
+  &lt;input type="tel"&gt;
+  &lt;input type="text"&gt;
+  &lt;input type="time"&gt;
+  &lt;input type="url"&gt;
+  &lt;input type="week"&gt;</textarea><br>
+  
+</p>
+    </section>
+    <hr>
+    <p>All Credits goes to <a href = "http://www.w3schools.com">w3schools.com</a> and <a href="http://www.geeksforgeeks.org"> geeksforgeeks.org</a></p>
+</div>
+</body>
+</html>
+
+<!--
+All credits goes to W3schools.com at geeksforgeeks.org
+Lahat ng information doong site ko po kinuha
+-Ray 
+-->
